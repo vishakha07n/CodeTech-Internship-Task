@@ -1,0 +1,183 @@
+/* === Global Styles === */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url("../images/2.jpg") center/cover no-repeat;
+  color: #000;
+}
+
+/* === Header & Navigation === */
+header {
+  background: #222;
+  color: rgb(153, 98, 98);
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #ccc;
+  text-decoration: none;
+}
+nav a:hover,
+nav a.active {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* === Layout Containers === */
+section {
+  padding: 2em;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* === Hero Section === */
+.hero {
+  text-align: center;
+  background: #624040;
+  padding: 50px 20px;
+}
+
+/* === Buttons === */
+.btn,
+.btn-submit {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn {
+  background: #007bff;
+  color: #fff;
+}
+
+.btn-submit {
+  background: #333;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  align-self: flex-start;
+}
+.btn-submit:hover {
+  background-color: #555;
+}
+
+/* === Project Card === */
+.project {
+  background: rgb(204, 197, 197);
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+}
+.project a {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* === Navigation List === */
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+/* === Contact Section === */
+.contact-section {
+  background: rgb(204, 197, 197);
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* === Form Styling === */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+label span {
+  color: red;
+}
+
+input,
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: #f9f9f9;
+  color: #333;
+}
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #eee;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* === Typography Utilities === */
+.highlight-title {
+  color: #f5f6fa;
+  margin-bottom: 10px;
+}
+.intro-text {
+  color: #fbfbfb;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+/* === Skills List === */
+.skills-list {
+  list-style-type: square;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+.skills-list li {
+  margin: 8px 0;
+}
+
+/* === Profile Image === */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}

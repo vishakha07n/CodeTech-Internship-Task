@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="style.css" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real-Time Collaborative Editor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Redirect to login if not authenticated -->
+  <script>
+    if (!localStorage.getItem("username")) {
+      window.location.href = "/login.html";
+    }
+  </script>
+
+  <header>
+    <h1>Real-Time Collaborative Editor</h1>
+    <p>Edit together in real-time!</p>
+    <button id="themeToggle">Dark Mode</button>
+  </header>
+
+  <main>
+    <textarea id="editor" placeholder="Start typing with your team..."></textarea>
+    <div id="typing-status"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 by Vishakha</p>
+    <button id="logoutBtn">Logout</button>
+  </footer>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
